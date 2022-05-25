@@ -8,6 +8,12 @@ const PORT = process.env.PORT || 8080
 const contenedor = new Contenedor(DBfile)
 
 
+app.get('/', ( request, response) => {
+    response.send(
+        "<h1>Bienvenidos!!!</h1>"
+    ) 
+ })
+
 app.get('/products', ( request, response) => {
    const data = contenedor.getAll()
    response.json(data) 
