@@ -10,7 +10,7 @@ const contenedor = new Contenedor(DBfile)
 
 app.get('/', ( request, response) => {
     response.send(
-        "<h1>Bienvenidos!!!</h1>"
+        "<h1>Desafio 03 - Servidor con express</h1>"
     ) 
  })
 
